@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+<style>
+    nav .nav-links li a:hover, .nav-links .active{
+      color: #ff4081;
+}
+input{
+    border-radius: 4px;
+    border: none;
+    display: flex;
+
+}
+button{
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all .5s ease-in-out;
+    border-width: 1px;
+    color: white;
+    border-color: #ff4081;
+    background: #ff4081;
+}
+button:hover{
+    background-color: transparent;
+    border-color: #ff4081;
+    color: #ff4081;
+    border-width: 1px;
+}
+</style>
+
+<!-- Navbar -->
+<header>
+    <nav>
+        <div class="logo"><a href="index.html">Romeo</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html" class=" active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Contact Section -->
+<section class="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:adamilare183@gmail.com" method="POST">
+        <pre> 
+        <h3>Name:</h3><input type="text" name="name" placeholder="Your Name" required> 
+        <h3>Email:</h3> <input type="email" name="email" placeholder="Your Email" required> 
+        <h3>Write a comment:</h3> <textarea name="message" placeholder="Your Message" required></textarea> 
+<a href="mailto:adamilare183@gmail.com"><button type="submit">Send Message</button></a>
+        </pre>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; HIS WILL.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
